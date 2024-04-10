@@ -10,27 +10,6 @@ app.use(express.static(path.join(__dirname)));
 
 const cars = require('./cars.json');
 
-// const cars = [
-//     {
-//         "make": "Toyota",
-//         "model": "Camry",
-//         "year": 2022,
-//         "price": 250000
-//     },
-//     {
-//         "make": "Honda",
-//         "model": "Accord",
-//         "year": 2021,
-//         "price": 200000
-//     },
-//     {
-//         "make": "Ford",
-//         "model": "Mustang",
-//         "year": 2020,
-//         "price": 300000
-//     }
-// ];
-
 //get all cars
 app.get('/cars', (req, res) => {
     res.json(cars);
